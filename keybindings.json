@@ -1,0 +1,19 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "F12",
+    "command": "workbench.action.togglePanel",
+  },
+  {
+    "key": "Ctrl+]",
+    "command": "editor.action.goToTypeDefinition"
+  },
+  {
+    "key": "Ctrl+T",
+    "command": "workbench.action.navigateBack"
+  },
+  {
+    "key": "Ctrl+F12",
+    "command": "workbench.action.toggleMaximizedPanel"
+  }
+]
