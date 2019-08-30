@@ -15,6 +15,10 @@
   "vim.leader": ",",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
+      "before": ["%"],
+      "commands": ["extension.matchitJumpItems"]
+    },
+    {
       "before": ["<leader>","x", "x"],
       "commands": ["editor.action.smartSelect.expand"]
     },
@@ -83,6 +87,10 @@
     {
       "before": ["<leader>","s", "s"],
       "commands": ["actions.find"]
+    },
+    {
+      "before": ["%"],
+      "commands": ["extension.matchitJumpItems"]
     },
     {
       "before": ["<leader>","s", "i"],
