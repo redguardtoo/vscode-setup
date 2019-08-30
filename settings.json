@@ -15,6 +15,10 @@
   "vim.leader": ",",
   "vim.visualModeKeyBindingsNonRecursive": [
     {
+      "before": ["v"],
+      "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
       "before": ["%"],
       "commands": ["extension.matchitJumpItems"]
     },
@@ -45,8 +49,8 @@
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>","x", "x"],
-      "commands": ["editor.action.smartSelect.expand"]
+      "before": ["<leader>","r", "v"],
+      "commands": ["editor.action.rename"]
     },
     {
       "before": ["<leader>","q", "q"],
@@ -73,6 +77,14 @@
       "commands": ["editor.action.commentLine"]
     },
     {
+      "before": ["<leader>","x", "x"],
+      "commands": ["editor.action.smartSelect.expand"]
+    },
+    {
+      "before": ["<leader>","z", "z"],
+      "commands": ["editor.action.smartSelect.shrink"]
+    },
+    {
       "before": ["<leader>","t", "a"],
       "commands": ["workbench.action.toggleActivityBarVisibility"]
     },
@@ -95,6 +107,10 @@
     {
       "before": ["<leader>","s", "i"],
       "commands": ["extension.matchitSelectItems"]
+    },
+    {
+      "before": ["<leader>","d", "i"],
+      "commands": ["extension.matchitDeleteItems"]
     },
     {
       "before": ["<leader>","x", "f"],
@@ -145,6 +161,22 @@
       "commands": ["workbench.action.toggleZenMode"]
     },
     {
+      "before": ["<leader>","w", "h"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<leader>","w", "j"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<leader>","w", "k"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<leader>","w", "l"],
+      "after": ["<C-w>", "l"]
+    },
+    {
       "before": ["<leader>","w", "q"],
       "after": [":wq"],
     }
@@ -169,5 +201,9 @@
   "workbench.colorTheme": "Solarized Dark",
   "workbench.statusBar.visible": true,
   "editor.renderWhitespace": "none",
-  "editor.renderControlCharacters": false
+  "editor.renderControlCharacters": false,
+  "window.titleBarStyle": "native",
+  "editor.renderLineHighlight": "none",
+  "extensions.ignoreRecommendations": true,
+  "editor.occurrencesHighlight": false
 }
