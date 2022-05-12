@@ -2,8 +2,13 @@
 This repository contains my Visual Studio Code setup.
 
 ## Files
-* settings.json - modifies the default settings offered by VS Code or its extensions
-* keybindings.json - alter the default keybindings
+* settings.json - settings offered by VS Code or its extensions
+* keybindings.json - keybindings
+
+Above two files are placed in,
+- "~/.config/Code/User" on Linux
+- "~/Application Support/Code/User" on macOS
+- "%AppData%\Code\User" on Windows
 
 ## Required Extensions
 * [Vim](https://github.com/VSCodeVim/Vim)
